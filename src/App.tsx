@@ -9,12 +9,17 @@ import Experience from './sections/Experience'
 import Services from './sections/Services'
 import Contact from './sections/Contact'
 import { useScrollReveal } from './hooks/useScrollReveal'
+import { useTheme } from './hooks/useTheme'
 
 export default function App() {
+
+  const { dark } = useTheme()
   useScrollReveal()
 
   return (
-    <div className="min-h-screen bg-dark-900 text-white font-sans antialiased overflow-x-hidden">
+   <div className={`min-h-screen font-sans antialiased overflow-x-hidden transition-colors duration-300 ${
+  dark ? 'bg-dark-900 text-white' : 'bg-slate-50 text-gray-900'
+}`}>
       <Cursor />
       <Navbar />
 

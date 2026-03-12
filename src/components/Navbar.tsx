@@ -63,12 +63,19 @@ export default function Navbar() {
             {/* Actions */}
             <div className="hidden md:flex items-center gap-3">
               <button
-                onClick={toggle}
-                className="w-9 h-9 glass rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-                aria-label="Toggle theme"
-              >
-                {dark ? <Sun size={15} className="text-yellow-400" /> : <Moon size={15} className="text-brand-400" />}
-              </button>
+                  onClick={toggle}
+                  className={`w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-all border ${
+                    dark
+                      ? 'bg-white/5 border-white/10 hover:bg-white/10'
+                      : 'bg-black/5 border-black/10 hover:bg-black/10'
+                  }`}
+                  aria-label="Toggle theme"
+                >
+                  {dark
+                    ? <Sun size={15} className="text-yellow-400" />
+                    : <Moon size={15} className="text-brand-500" />
+                  }
+                </button>
               <a
                 href="#contact"
                 className="btn-primary text-sm px-5 py-2.5"

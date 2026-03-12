@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ADD inside @layer base { } — at the very top, before body {} */
+
+:root {
+  --bg:           #f8fafc;
+  --bg2:          #f1f5f9;
+  --text:         #0f172a;
+  --text-muted:   #64748b;
+  --glass-bg:     rgba(255,255,255,0.6);
+  --glass-border: rgba(0,0,0,0.08);
+  --input-bg:     #f1f5f9;
+  --input-border: #e2e8f0;
+}
+
+.dark {
+  --bg:           #060914;
+  --bg2:          #0d1120;
+  --text:         #f0f0ff;
+  --text-muted:   #94a3b8;
+  --glass-bg:     rgba(255,255,255,0.05);
+  --glass-border: rgba(255,255,255,0.08);
+  --input-bg:     #131929;
+  --input-border: #1e2a42;
+}
+
+/* UPDATE .glass class to use variables: */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* ADD light mode section backgrounds: */
+.light #skills,
+.light #experience,
+.light #contact {
+  background: #f1f5f9 !important;
+}
+
+.light .text-gray-400 { color: #64748b !important; }
+.light .text-white    { color: #0f172a !important; }
+
 @layer base {
   * { cursor: none !important; }
   
