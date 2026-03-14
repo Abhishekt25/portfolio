@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+
 import type { Project } from '../types'
 
 interface Props {
@@ -39,7 +39,7 @@ export default function ProjectCard({ project, delay = 0 }: Props) {
         </div>
 
         {/* Hover overlay */}
-        <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 backdrop-blur-sm">
+        {/* <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 backdrop-blur-sm">
           <a
             href={project.github}
             target="_blank"
@@ -56,7 +56,7 @@ export default function ProjectCard({ project, delay = 0 }: Props) {
           >
             <ExternalLink size={13} /> Live Demo
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Content */}

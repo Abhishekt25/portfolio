@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Mail, Linkedin, Github, Twitter, Send } from 'lucide-react'
+import { Mail, Linkedin, Github, Send } from 'lucide-react'
 import { personalInfo } from '../data/portfolio'
 import SectionHeading from '../components/SectionHeading'
 import Toast from '../components/Toast'
@@ -34,7 +34,6 @@ export default function Contact() {
     { icon: <Mail size={18} />, label: 'Email', value: personalInfo.email,    href: `mailto:${personalInfo.email}`,   color: 'group-hover:bg-brand-600' },
     { icon: <Linkedin size={18} />, label: 'LinkedIn', value: 'linkedin.com/in/abhishektiwari', href: personalInfo.linkedin, color: 'group-hover:bg-blue-600' },
     { icon: <Github size={18} />, label: 'GitHub',   value: 'github.com/abhishektiwari',    href: personalInfo.github,   color: 'group-hover:bg-gray-600' },
-    { icon: <Twitter size={18} />, label: 'Twitter',  value: '@abhishektiwari',               href: personalInfo.twitter,  color: 'group-hover:bg-sky-500'  },
   ]
 
   return (

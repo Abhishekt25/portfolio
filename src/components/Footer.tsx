@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react'
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react'
 import { personalInfo } from '../data/portfolio'
 
 export default function Footer() {
@@ -7,7 +7,6 @@ export default function Footer() {
   const socials = [
     { icon: <Github size={16} />, href: personalInfo.github,   label: 'GitHub'   },
     { icon: <Linkedin size={16} />, href: personalInfo.linkedin, label: 'LinkedIn' },
-    { icon: <Twitter size={16} />, href: personalInfo.twitter,  label: 'Twitter'  },
     { icon: <Mail size={16} />, href: `mailto:${personalInfo.email}`, label: 'Email' },
   ]
 

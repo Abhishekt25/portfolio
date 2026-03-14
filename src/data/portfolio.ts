@@ -1,6 +1,8 @@
 // ✏️  Edit THIS file to update ALL your info across the entire portfolio
 
 import type { SkillCategory, Project, ExperienceItem, Service, Cert, NavLink } from '../types'
+import resume from '../assets/resume/AbhishekResume.pdf'
+
 
 /* ─── Personal ─── */
 export const personalInfo = {
@@ -21,11 +23,10 @@ export const personalInfo = {
     'I specialize in React, Next.js, Node.js, PHP & Laravel — from high-conversion storefronts and payment integrations to verification dashboards and automated reporting systems.',
   ],
   location:    'Jaipur, Rajasthan 🇮🇳',
-  email:       'abhishek@example.com',
-  linkedin:    'https://linkedin.com/in/abhishektiwari',
-  github:      'https://github.com/abhishektiwari',
-  twitter:     'https://twitter.com/abhishektiwari',
-  cvUrl:       '/cv.pdf',
+  email:       'abtiwari2023@gmail.com',
+  linkedin:    'https://www.linkedin.com/in/abhishek-tiwari-9005893a5/',
+  github:      'https://github.com/Abhishekt25/',
+ cvUrl: resume,
   available:   true,
   stats: [
     { value: '3+',   label: 'Years Exp.'    },
@@ -210,7 +211,7 @@ export const experience: ExperienceItem[] = [
   {
     id: 1,
     role:    'Full Stack Developer',
-    company: 'CartZen Commerce',
+    company: 'ByteNova Technologies',
     type:    'Remote · Full-Time',
     period:  'Mar 2022 – Present',
     current: true,
